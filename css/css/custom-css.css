@@ -553,9 +553,9 @@ select {
 }
 
 .background-header {
-  background-image: url("https://static.chope.co/static/mainwebsite5.0/images/herobanner-sg.jpg") !important;
-  height: 300px !important;
-  background-position: center !important;
+  background-image: url("https://cdn1-production-images-kly.akamaized.net/zdWkvsrx4iemkwb__IRR9rmfFNc=/640x360/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4048400/original/009016000_1654828976-eugenia-clara-_QTeGT478_8-unsplash.jpg") !important;
+  height: 400px !important;
+  background-position: top !important;
   background-size: cover !important;
   opacity: 0.8 !important;
   margin-top: 55px !important;
