@@ -1,4 +1,3 @@
-<!-- select-menu.php -->
 <?php
 if (isset($_POST['reservation'])) {
   $res_id = $_POST['res_id'];
@@ -28,7 +27,7 @@ if (isset($_POST['reservation'])) {
           <div class="row slider-text align-items-center justify-content-center">
             <div class="col-md-10 col-sm-12 ftco-animate text-center" style="padding-bottom: 25%;">
               <p class="breadcrumbs"><span class="mr-2"><a href="accueil.php">Home</a></span> <span>Menu</span></p>
-              <h1 class="mb-3">Our Exclusive Menu</h1>
+              <h1 class="mb-3">Menu Ekslusif Kami</h1>
             </div>
           </div>
         </div>
@@ -39,21 +38,21 @@ if (isset($_POST['reservation'])) {
         <div class="container">
           <div class="row justify-content-center mb-5 pb-5">
             <div class="col-md-7 text-center heading-section ftco-animate">
-              <span class="subheading">Our Menu</span>
-              <h2>Discover Our Exclusive Menu</h2>
+              <span class="subheading">MEnu Kami</span>
+              <h2>Jelajahi Menu Kami</h2>
             </div>
           </div>
           <div class="row">
             <div class="col-md-8 dish-menu">
             </div>
             <div class="col-md-4">
-              <h2 class="h4 mb-4">Reservation Information</h2>
+              <h2 class="h4 mb-4">Informasi Reservasi</h2>
               <div class="d-flex ftco-animate">
                 <div class="col-md-12 flex-column">
                   <div class="row d-block flex-row">
                     <div class="col mb-2 d-flex py-4 border" style="background: white;">
                       <div class="align-self-center">
-                        <p class="mb-0"><span>Reservation Name:</span> <a href=""><?php echo $reservation_name; ?></a></p>
+                        <p class="mb-0"><span>Nama Reservasi:</span> <a href=""><?php echo $reservation_name; ?></a></p>
                       </div>
                     </div>
                     <!-- <div class="col mb-2 d-flex py-4 border" style="background: white;">
@@ -63,7 +62,7 @@ if (isset($_POST['reservation'])) {
                     </div> -->
                     <div class="col mb-2 d-flex py-4 border" style="background: white;">
                       <div class="align-self-center">
-                        <p class="mb-0"><span>Phone:</span> <a href=""><?php echo $reservation_phone; ?></a></p>
+                        <p class="mb-0"><span>Nomor Telepon:</span> <a href=""><?php echo $reservation_phone; ?></a></p>
                       </div>
                     </div>
                     <!-- <div class="col mb-2 d-flex py-4 border" style="background: white;">
@@ -73,12 +72,12 @@ if (isset($_POST['reservation'])) {
                     </div> -->
                     <div class="col mb-2 d-flex py-4 border" style="background: white;">
                       <div class="align-self-center">
-                        <p class="mb-0"><span>Reservation Date:</span> <a href=""><?php echo $reservation_date; ?></a></p>
+                        <p class="mb-0"><span>TanggaL Reservasi:</span> <a href=""><?php echo $reservation_date; ?></a></p>
                       </div>
                     </div>
                     <div class="col mb-2 d-flex py-4 border" style="background: white;">
                       <div class="align-self-center">
-                        <p class="mb-0"><span>Reservation Time:</span> <a href=""><?php echo $reservation_time; ?></a></p>
+                        <p class="mb-0"><span>Waktu Reservasi:</span> <a href=""><?php echo $reservation_time; ?></a></p>
                       </div>
                     </div>
                     

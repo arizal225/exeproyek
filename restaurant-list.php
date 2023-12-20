@@ -17,23 +17,23 @@ if (isset($_POST['find'])) {
         <div class="row justify-content-md-center">
           <form action="book.php" method="POST">
             <div class="col-md-12 text-center marb-35">
-              <div class="header-h">Discover our exclusive restaurants</div>
+              <div class="header-h">Jelajahi Restoran Kami</div>
               <p class="header-p">Disini anda dapat mencari makanan sesuai selera anda.
               </p>
             </div>
             <div class="col-md-12 text-center" id="menu-filters">
               <ul class="ul-menus">
                 <li><a class="filter active" data-filter=".menu-restaurant">Lihat semua</a></li>
-                <li><a class="filter " data-filter=".wine_bar">Korean Food</a></li>
+                <li><a class="filter " data-filter=".wine_bar">Cepat Saji</a></li>
                 <li><a class="filter " data-filter=".bio">Aneka Nasi</a></li>
-                <li><a class="filter " data-filter=".bistro_brass">Pasta</a></li>
+                <li><a class="filter " data-filter=".bistro_brass">Mie</a></li>
                 <li><a class="filter " data-filter=".waffles">Chinese Food</a></li>
                 <li><a class="filter " data-filter=".world_food">Seafood</a></li>
-                <li><a class="filter " data-filter=".gourmet">Makanan Barat</a></li>
+                <li><a class="filter " data-filter=".gourmet">Sate</a></li>
                 <li><a class="filter " data-filter=".pizza">Pizza</a></li>
                 <li><a class="filter " data-filter=".tea">Roti</a></li>
                 <li><a class="filter " data-filter=".traditional">Ayam & Bebek</a></li>
-                <li><a class="filter " data-filter=".vegetarian">Vegetarian</a></li>
+                <li><a class="filter " data-filter=".vegetarian">Aneka Minuman</a></li>
               </ul>
             </div>
 

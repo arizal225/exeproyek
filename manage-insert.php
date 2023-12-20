@@ -32,7 +32,7 @@ if (isset($_POST['submit'])) {
 		mysqli_stmt_execute($stmt);
 		$checkresult = mysqli_stmt_get_result($stmt);
 		if ($checkresult->num_rows > 0) {
-			echo '<script>alert("Warning! This E-mail already exists.")</script>';
+			echo '<script>alert("Peringatan! Email ini sudah dipakai!")</script>';
 			echo '<script>window.location="register.php"</script>';
 		} else {
 			if (isset($_FILES['image'])) {
@@ -68,7 +68,7 @@ if (isset($_POST['submit'])) {
 						}
 					}
 				} else {
-					echo '<script>alert("Required JPG,PNG,GIF in Logo Field.")</script>';
+					echo '<script>alert("Membutuhkan PNG atau JPG")</script>';
 					echo '<script>window.location="register.php"</script>';
 				}
 			} else {
@@ -81,7 +81,7 @@ if (isset($_POST['submit'])) {
 				} else {
 					mysqli_stmt_bind_param($stmt2, "sssisi", $fullname, $first_name, $email, $phone, $password, $role);
 					mysqli_stmt_execute($stmt2);
-					echo '<script>alert("New account well added!")</script>';
+					echo '<script>alert("Akun baru telah ditambahkan!")</script>';
 					echo '<script>window.location="login.php"</script>';
 				}
 			}
@@ -120,7 +120,7 @@ if (isset($_POST['submit2'])) {
 		mysqli_stmt_execute($stmt);
 		$checkresult = mysqli_stmt_get_result($stmt);
 		if ($checkresult->num_rows > 0) {
-			echo '<script>alert("Warning ! A restaurant with this E-mail already exists.")</script>';
+			echo '<script>alert("Peringatan ! Restoran dengan E-mail ini sudah ada.")</script>';
 			echo '<script>window.location="register.php"</script>';
 		} else {
 			if (isset($_FILES['image'])) {
@@ -181,7 +181,7 @@ if (isset($_POST['submit2'])) {
 				} else {
 					mysqli_stmt_bind_param($stmt2, "sissisissisisi", $fullname, $category, $email, $website, $phone, $address, $area, $open, $close, $service, $file_name, $siret, $password, $role);
 					mysqli_stmt_execute($stmt2);
-					echo '<script>alert("New account added!")</script>';
+					echo '<script>alert("Akun baru telah ditambahkan!")</script>';
 					echo '<script>window.location="login.php"</script>';
 				}
 			}
@@ -237,10 +237,10 @@ if (isset($_POST['book'])) {
 	if ($bdinsert == true && $cinsert == true) {
 		echo '<script>
                     swal({
-                        title: "Thank you !",
-                        text: "The restaurant will send you a Confirmation Email soon. :D",
-                        icon: "success",
-                        button: "ok",
+                        title: "Terimakasih !",
+                        text: "Restoran akan segera mengirimi Anda Email Konfirmasi. :D",
+                        icon: "Sukses",
+                        button: "Ok",
                     }).then(function() {
                         window.location = "accueil.php";
                     });

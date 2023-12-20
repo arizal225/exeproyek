@@ -1,4 +1,3 @@
-<!-- select-menu.php -->
 <?php
 if (isset($_POST['selectChair'])) {
 	include 'dbCon.php';
@@ -20,7 +19,6 @@ if (isset($_POST['selectChair'])) {
 	<body>
 
 		<?php include 'template/nav-bar.php'; ?>
-		<!-- END nav -->
 		<style>
 			.color-span {
 				font-weight: 500;

@@ -1,4 +1,3 @@
-<!-- signin.php -->
 <?php include 'dbCon.php'; ?>
 <?php include 'template/header.php'; ?>
 
@@ -7,7 +6,6 @@
   <?php include 'template/nav-bar.php'; ?>
   <?php include 'template/search-header.php'; ?>
 
-  <!-- END nav -->
 
   <section class="ftco-section bg-light">
     <div class="container">
@@ -79,16 +77,16 @@ if (isset($_POST['login'])) {
   $passwordSQL = "SELECT * FROM rc_info WHERE email = '$email' And password=?;";
   $stmt = mysqli_stmt_init($con);
 
-  // Prepare the prepared statement to prevent injection SQL from loggin with " anything' or 'x'='x "
+  
   if (!mysqli_stmt_prepare($stmt, $passwordSQL)) {
     echo "SQL declaration has failed.";
   } else {
-    // Bind parameters to the placeholder
+    
     mysqli_stmt_bind_param($stmt, "s", $password);
-    // Run parameters inside db
+    
     mysqli_stmt_execute($stmt);
     $row = mysqli_fetch_assoc($emailResult);
-    // $passwordResult = $con->query($passwordSQL);
+   
     $passwordResult = mysqli_stmt_get_result($stmt);
 
     if ($emailResult->num_rows <= 0) {
@@ -96,7 +94,7 @@ if (isset($_POST['login'])) {
       echo '<script>
               swal({
                 title: false,
-                text: "This mais doesn\'t exist.",
+                text: "Email ini tidak terdaftar",
                 icon: "warning",
                 button: "ok",
               }).then(function() {
@@ -109,8 +107,8 @@ if (isset($_POST['login'])) {
       echo '<script>
                 swal({
                   title: false,
-                  text: "Incorrect password!",
-                  icon: "warning",
+                  text: "Password Salah!",
+                  icon: "Peringatan",
                   button: "ok",
                 }).then(function() {
                   window.location = "login.php";

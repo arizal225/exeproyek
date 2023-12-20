@@ -23,7 +23,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
     <section role="main" class="content-body">
       <div class="booking-form-w3layouts" style="width: 45%;">
         <header class="page-header">
-          <h3 class="sub-heading-agileits">My Account</h3>
+          <h3 class="sub-heading-agileits">Akun Saya</h3>
         </header>
 
         <!-- start: page -->
@@ -51,8 +51,8 @@ if (!isset($_SESSION['isLoggedIn'])) {
               echo '<script>
                     swal({
                       title: "Super !",
-                      text: "Your profile is now updated!",
-                      icon: "success",
+                      text: "Profil anda telah Diupdate!",
+                      icon: "Sukses",
                       button: "ok",
                     }).then(function() {
                       window.location = "profil-user.php";
@@ -63,9 +63,9 @@ if (!isset($_SESSION['isLoggedIn'])) {
               echo '<script>
                     swal({
                       title: "Oops !",
-                      text: "A problem has occurred!",
-                      icon: "warning",
-                      button: "ok",
+                      text: "Ada Kesalahan!",
+                      icon: "Peringatan",
+                      button: "Ok",
                     }).then(function() {
                       window.location = "profil-user.php";
                     });
@@ -77,43 +77,43 @@ if (!isset($_SESSION['isLoggedIn'])) {
             <div class="">
               <form class="form-horizontal" method="POST" action="profil-user.php">
                 <div class="">
-                  <h2 class="h4 mb-4 text-center" style="color: grey;">My account information</h2>
+                  <h2 class="h4 mb-4 text-center" style="color: grey;">Informasi Akun</h2>
                   <div class="form-inline">
                     <div class="col mb-2 d-flex py-4" style="background: white;">
                       <div class="align-self-center">
-                        <p class="mb-0"><span class="color-span-title"><i class="fas fa-user-tag fa-lg fa-fw mr-1" aria-hidden="true"></i> Last Name :</span> <input style="text-transform: capitalize;" type="text" name="fullname" class="form-control" required="" placeholder="Nom" value="<?php echo $row['rc_name']; ?>"> </p>
+                        <p class="mb-0"><span class="color-span-title"><i class="fas fa-user-tag fa-lg fa-fw mr-1" aria-hidden="true"></i> Nama Awal :</span> <input style="text-transform: capitalize;" type="text" name="fullname" class="form-control" required="" placeholder="Nama Awal" value="<?php echo $row['rc_name']; ?>"> </p>
                       </div>
                     </div>
                     <div class="col mb-2 d-flex py-4" style="background: white;">
                       <div class="align-self-center">
-                        <p class="mb-0"><span class="color-span-title"><i class="fas fa-user fa-lg fa-fw mr-1" aria-hidden="true"></i> First Name : </span> <input style="text-transform: capitalize;" type="text" name="first_name" class="form-control no-outline" required="" placeholder="Prénom" value="<?php echo $row['first_name']; ?>"></p>
+                        <p class="mb-0"><span class="color-span-title"><i class="fas fa-user fa-lg fa-fw mr-1" aria-hidden="true"></i> Nama Akhir : </span> <input style="text-transform: capitalize;" type="text" name="first_name" class="form-control no-outline" required="" placeholder="Nama Akhir" value="<?php echo $row['first_name']; ?>"></p>
                       </div>
                     </div>
                   </div>
                   <div class="form-inline">
                     <div class="col mb-2 d-flex py-4" style="background: white;">
                       <div class="align-self-center">
-                        <p class="mb-0"><span class="color-span-title"><i class="fas fa-phone-square-alt fa-lg fa-fw mr-1" aria-hidden="true"></i> Phone : </span> <input type="text" name="phone" class="form-control" required="" placeholder="Télephone" value="0<?php echo $row['phone']; ?>"></p>
+                        <p class="mb-0"><span class="color-span-title"><i class="fas fa-phone-square-alt fa-lg fa-fw mr-1" aria-hidden="true"></i> Nomor Telepon : </span> <input type="text" name="phone" class="form-control" required="" placeholder="Nomor Telepon" value="0<?php echo $row['phone']; ?>"></p>
                       </div>
                     </div>
                     <div class="col mb-2 d-flex py-4" style="background: white;">
                       <div class="align-self-center">
-                        <p class="mb-0"><span class="color-span-title"><i class="far fa-envelope fa-lg fa-fw mr-1" aria-hidden="true"></i> Mail : </span> <input type="email" name="email" class="form-control" required="" placeholder="Email" value="<?php echo $row['email']; ?>"></p>
+                        <p class="mb-0"><span class="color-span-title"><i class="far fa-envelope fa-lg fa-fw mr-1" aria-hidden="true"></i> Email : </span> <input type="email" name="email" class="form-control" required="" placeholder="Email" value="<?php echo $row['email']; ?>"></p>
                       </div>
                     </div>
                   </div>
                   <div class="form-inline">
                     <div class="col mb-2 d-flex py-4" style="background: white;">
                       <div class="align-self-center">
-                        <p class="mb-0"><span class="color-span-title"><i class="fas fa-lock fa-lg fa-fw mr-1" aria-hidden="true"></i></i> Password : <input type="password" name="password" class="form-control" required="" placeholder="Mot de passe" value="<?php echo $row['password']; ?>"></p>
+                        <p class="mb-0"><span class="color-span-title"><i class="fas fa-lock fa-lg fa-fw mr-1" aria-hidden="true"></i></i> Password : <input type="password" name="password" class="form-control" required="" placeholder="Password" value="<?php echo $row['password']; ?>"></p>
                       </div>
                     </div>
                     <div class="col mb-2 d-flex py-4 ">
                       <div class="align-self-center">
                         <div class="col-md-7">
-                          <label class="col-md-4 control-label" for="CustomerContact"></label>
+                          <label class="col-md-4 control-label" for="KontakPelanggan"></label>
                           <div class="col-md-8">
-                            <input id="btn-loader" type="submit" value="Sauvegarder" name="save" class="btn btn-warning">
+                            <input id="btn-loader" type="submit" value="Simpan" name="save" class="btn btn-warning">
                           </div>
                         </div>
                       </div>

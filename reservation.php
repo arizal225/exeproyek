@@ -65,7 +65,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
                 <div class="media-body">
                   <p>
                     <span style="color: grey;"><i class="fas fa-store"></i></span>
-                    <span class="light-blue regular alt-p"> <a class="link-web" target="_blank" href="<?php echo $r['website']; ?>">Web site</a></span>
+                    <span class="light-blue regular alt-p"> <a class="link-web" target="_blank" href="<?php echo $r['website']; ?>">Lokasi</a></span>
                   </p>
                 </div>
               </div>
@@ -120,7 +120,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
                 <div class="form-group">
                   <label for="">Jam</label>
                   <select type="time" name="reservation_time" class="form-control" placeholder="Heure" id="time" required="">
-                    <option value=""> -Select- </option>
+                    <option value=""> -Pilih- </option>
                     <option value="10:00 h">08:00</option>
                     <option value="10:00 h">08:30</option>
                     <option value="10:00 h">09:00</option>
@@ -182,20 +182,6 @@ if (!isset($_SESSION['isLoggedIn'])) {
         <form action="book.php" method="POST">
           <div class="col-md-12 text-center marb-35">
             <div class="header-h">Menu</div>
-
-
-          </div>
-          <div class="col-md-12 text-center" id="menu-filters">
-            <ul>
-              <li><a class="filter active" data-filter=".menu-restaurant">See all</a></li>
-              <li><a class="filter " data-filter=".menu">Menu</a></li>
-              <li><a class="filter " data-filter=".entree">Entree</a></li>
-              <li><a class="filter " data-filter=".dish">Dish</a></li>
-              <li><a class="filter" data-filter=".sidedish">Side Dish</a></li>
-              <li><a class="filter" data-filter=".dessert">Dessert</a></li>
-              <li><a class="filter" data-filter=".drinks">Drinks</a></li>
-            </ul>
-          </div>
 
           <div id="menu-wrapper">
             <div class="container-fluid">

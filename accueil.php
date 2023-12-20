@@ -12,9 +12,9 @@
 	<div class="newmian">
 		<div class="content-box-new">
 			<div class="fe-box commen">
-				<h4>Penawaran Saat ini</h4>
+				<h4>Rekomendasi</h4>
 				<div class="title-t">
-					<p>Hot Deals -10% !</p>
+					<p></p>
 					<div class="clear"></div>
 				</div>
 				<ul>
@@ -35,10 +35,10 @@
 	</div>
 	<!--  -->
 	<!-- Row World food -->
-	<div class="newmian">
+	<div class="newmian">	
 		<div class="content-box-new">
 			<div class="fe-box commen">
-				<h4>Recommended</h4>
+				<h4>Mau Lihat Yang Lain?</h4>
 				<div class="title-t">
 
 					<div class="clear"></div>

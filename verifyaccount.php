@@ -13,17 +13,17 @@ if (isset($_GET['view'])) {
 			Verify your account.. click the link below.
 			http://localhost/tablereservation/verifyaccount.php?email='.$email.'&id='.$id.'&auth='.$auth.'
 			</body></html>'; 
-		$mail->addAddress($email, "Booking Approve");
+		$mail->addAddress($email, "Pemesanan Diterima");
 		if($mail->send()) {
-			echo '<script>alert("A confirmation email has already been sent. Please check your emails.")</script>';
+			echo '<script>alert("Email sudah dikirim, silahkan dicek")</script>';
 			echo '<script>window.location="verifyaccount.php?view=verifyaccount&email='.$email.'&id='.$id.'&auth='.$auth.'"</script>';
 		}else{
-			echo '<script>alert("Email is not valid.")</script>';
+			echo '<script>alert("Email tidak valid.")</script>';
 			echo '<script>window.location="login.php"</script>';
 	    } 
 
 	}else{
-		echo '<a href="verifyaccount.php?view=view&resend=resend&email='.$email.'&id='.$id.'&auth='.$auth.'">Resend a confirmation email.</a>'; 
+		echo '<a href="verifyaccount.php?view=view&resend=resend&email='.$email.'&id='.$id.'&auth='.$auth.'">Kirim Ulang Konfirmasi Email</a>'; 
 	}
 
 }else{

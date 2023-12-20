@@ -153,7 +153,7 @@
                               <input type="submit" value="Daftar" name="submit2" class="btn btn-warning">
                             </div>
                           </form>
-                          <p class="text-center">Sduah punya akun? <a href="login.php">Klik disini</a> </p>
+                          <p class="text-center">Sudah punya akun? <a href="login.php">Klik disini</a> </p>
                         </div>
                       </div>
                     </div>

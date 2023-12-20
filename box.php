@@ -13,7 +13,7 @@ foreach ($result as $r) {
 				<p class="name"><?php echo $r['rc_name']; ?></p>
 			</div>
 			<div class="icon-box mobilenoshow"></div>
-			<p class="detail-p">Book-3x | Unlock -10% </p>
+			<p class="detail-p"></p>
 			<div class="time-box">
 				<span></span>
 				<p><?php echo date('H:i', strtotime($r['opening_res'])); ?> h - <?php echo date('H:i', strtotime($r['closing_res'])); ?> h </p>

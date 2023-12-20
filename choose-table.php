@@ -30,7 +30,7 @@ if (isset($_POST['reservation'])) {
           <!-- Form starts here -->
           <form action="book.php" method="POST">
             <div class="row">
-              <h2 class="sub-heading-agileits">Availability</h2>
+              <h2 class="sub-heading-agileits">Ketersediaan</h2>
               <div class="col-md-12 dish-menu">
                 <?php
                 echo "<br>";
@@ -51,7 +51,7 @@ if (isset($_POST['reservation'])) {
                         $table_id = $r['id'];
                       ?>
                         <div class="col-lg-3" style="min-height: 190px">
-                          <p class="text-center" style="font-weight: bold; color: grey;">Table of <?php echo @$i += 1 ?> pers</p>
+                          <p class="text-center" style="font-weight: bold; color: grey;">Meja dari <?php echo @$i += 1 ?> orang</p>
                           <nav class="menu2">
                             <ul style="list-style-type: none;">
                               <?php
@@ -83,7 +83,7 @@ if (isset($_POST['reservation'])) {
                                     <li>
                                       <input type="radio" name="chair[]" class="chair radio-custom-label" id="<?php echo $r2['id']; ?>" value="<?php echo $r2['id']; ?>">
                                       <label for="<?php echo $r2['id']; ?>">
-                                        <h3 id="h3">Available</h3>
+                                        <h3 id="h3">Tersedia</h3>
                                       </label>
                                     </li>
                                   </td>
@@ -112,7 +112,8 @@ if (isset($_POST['reservation'])) {
                 </div>
               </div>
           </form>
-          <small class="text-center" style="color: grey;">*If you would like a table for a group of more than 8 people, please contact the restaurant directly.</small>
+          <small class="text-center" style="color: grey;">*Jika Anda menginginkan meja untuk rombongan lebih dari 8 orang, silakan menghubungi pihak restoran secara langsung.
+</small>
         </div>
       </div>
     </section>
